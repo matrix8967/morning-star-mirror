@@ -1,6 +1,6 @@
 # morning-star
 
-`(つ•̀ᴥ•́)つ*:･ﾟ✧    ⛤		⊂(・▽・⊂)`
+`(つ•̀ᴥ•́)つ*:･ﾟ✧		⛤		⊂(・▽・⊂)`
 
 A better way to start your digital day.
 
