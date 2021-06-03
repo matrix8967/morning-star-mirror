@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>⛤</title>
+		<link rel="shortcut icon" type="image/jpg" href="img/fav.png"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+
+	<body>
+		<div class="maincontainer">
+			<div class="bottomcontainer">
+				<div class="searchbar">
+					<form name="form1" action="https://duckduckgo.com/" target="_blank" method="GET" >
+						<input type="text" autocomplete="off" placeholder="DDG" name="q" class="searchinput"></input>
+					</form>
+				</div>
+			</div>
+			<div class="time" id="time">
+				<script>
+					//document.getElementById("main").innerHTML = Date();
+					function updateClock() {
+						var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+						var m = new Date();
+						var dateString =
+						  (days[ m.getDay() ]) + " " +
+						  ("0" + (m.getMonth()+1)).slice(-2) +"/"+
+						  ("0" + m.getDate()).slice(-2) + "/" +
+						  m.getFullYear() +" "+
+						  ("0" + m.getHours()).slice(-2) + ":" +
+						  ("0" + m.getMinutes()).slice(-2) + ":" +
+						  ("0" + m.getSeconds()).slice(-2);
+
+						// set the content of the element with the ID time to the formatted string
+						document.getElementById('time').innerHTML = dateString;
+
+						// call this function again in 1000ms
+						setTimeout(updateClock, 1000);
+					}
+					updateClock(); // initial call
+				</script>
+			</div>
+			<div class="main" id="main1">
+				<div class="sidebar" style="background-image: url(img/skull.gif);"></div>
+				<div class="welcome">異端者</div>
+				<div class="bookmarkscontainer">
+					<ul>
+		              <li><a href="https://mastodon.social/"class="clink" target="_blank">Mastodon</a></li>
+		              <li><a href="https://beta.protonmail.com/login"class="clink" target="_blank">ProtonMail</a></li>
+		              <li><a href="https://old.reddit.com/"class="clink" target="_blank">Reddit</a></li>
+		              <li><a href="https://youtube.com"class="clink" target="_blank">YouTube</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://news.ycombinator.com/"class="clink" target="_blank">HackerNews</a></li>
+						<li><a href="https://www.phoronix.com/"class="clink" target="_blank">Phoronix</a></li>
+						<li><a href="https://www.redhat.com/sysadmin/"class="clink" target="_blank">SysAdmin</a></li>
+						<li><a href="https://www.omgubuntu.co.uk/"class="clink" target="_blank">Ubuntu</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://www.gog.com"class="clink" target="_blank">GOG</a></li>
+						<li><a href="https://www.protondb.com/"class="clink" target="_blank">ProtonDB</a></li>
+						<li><a href="https://matrix8967.itch.io/"class="clink" target="_blank">Itch</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://gitlab.com/matrix8967/"class="clink" target="_blank">Gitlab</a></li>
+						<li><a href="https://github.com/matrix8967"class="clink" target="_blank">Github</a></li>
+						<li><a href="https://text.mainframe.computer/"class="clink" target="_blank">Text</a></li>
+						<li><a href="https://grimoire.mainframe.computer/"class="clink" target="_blank">Grimoire</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
